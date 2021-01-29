@@ -5,16 +5,19 @@
 //
 //   *************************************** IMPORTANT ***********************************************
 //
-//   This sketch requires Mozzi/mozzi_config.h to be
+//   This sketch requires mozzi_config.h to be
 //   be changed from STANDARD mode to HIFI.
 //
-//   In Mozz/mozzi_config.h, change
-//   #define AUDIO_MODE STANDARD
-//   //#define AUDIO_MODE HIFI to
-//   //#define AUDIO_MODE STANDARD
-//   #define AUDIO_MODE HIFI
+//   In mozzi_config.h,
+//   change
+//       //#define AUDIO_MODE STANDARD
+//       #define AUDIO_MODE STANDARD_PLUS
+//       //#define AUDIO_MODE HIFI
+//   to
+//       //#define AUDIO_MODE STANDARD
+//       //#define AUDIO_MODE STANDARD_PLUS
+//       #define AUDIO_MODE HIFI
 //
-//   
 //  John Potter (technoWomble), 2021 CC by-nc-sa.
 //
 
