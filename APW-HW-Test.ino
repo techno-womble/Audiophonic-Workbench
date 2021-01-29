@@ -1,7 +1,7 @@
 //  Sketch to test the AudioPhonic Workbench Hardware. 
 //   
-//   Generate a test tone on using the Mozzi HI-FI
-//   PWM mode (pins 9 & 10 combined).
+//   Generate a test tone using the Mozzi HI-FI
+//   PWM mode.
 //   Read each analogue input in turn and display
 //   the values via the serial terminal
 //   
@@ -12,11 +12,15 @@
 //   This sketch requires Mozzi/mozzi_config.h to be
 //   be changed from STANDARD mode to HIFI.
 //
-//   In Mozz/mozzi_config.h, change
-//   #define AUDIO_MODE STANDARD
-//   //#define AUDIO_MODE HIFI to
-//   //#define AUDIO_MODE STANDARD
-//   #define AUDIO_MODE HIFI
+//   In Mozz/mozzi_config.h,
+//   change
+//       //#define AUDIO_MODE STANDARD
+//       #define AUDIO_MODE STANDARD_PLUS
+//       //#define AUDIO_MODE HIFI
+//   to
+//       //#define AUDIO_MODE STANDARD
+//       //#define AUDIO_MODE STANDARD_PLUS
+//       #define AUDIO_MODE HIFI
 //
 //
 //  John Potter (technoWomble), 2021 CC by-nc-sa.
@@ -30,7 +34,6 @@
 Oscil <SIN2048_NUM_CELLS, AUDIO_RATE> testOsc(SIN2048_DATA);    
 
 #define CONTROL_RATE 1    
-#define AUDIO_MODE HIFI                              
 
 const int vr1Pin = A0;
 const int vr2Pin = A1;
